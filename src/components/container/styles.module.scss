@@ -1,0 +1,19 @@
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.outer-container {
+    @extend .container;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.inner-container {
+    @extend .container;
+    
+    background: rgba(241, 241, 241, 0.5);;
+    border-radius: 10px;
+}

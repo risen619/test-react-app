@@ -1,0 +1,15 @@
+@import "icons.scss";
+
+body {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 8px;
+    }
+}

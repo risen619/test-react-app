@@ -1,0 +1,29 @@
+.left {
+    align-items: center;
+    display: flex;
+    padding-right: 16px;
+    width: 70%;
+
+    & > span {
+        line-height: 18px;
+    }
+}
+
+.right {
+    align-items: center;
+    display: flex;
+    width: 30%;
+
+    .icon-outer {
+        height: auto;
+        width: 26px;
+
+        @media screen and (max-width: 320px) {
+            width: 20px;
+        }
+    }
+
+    .icon {
+        margin-right: 6px;
+    }
+}

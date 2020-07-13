@@ -1,0 +1,67 @@
+.root {
+    padding: 54px 64px 68px;
+    width: 100%;
+
+    @media screen and (max-width: 320px) {
+        padding: 26px 25px 21px;
+    }
+}
+
+.calendar-row {
+    display: flex;
+    margin-bottom: 20px;
+    
+    .left {
+        font-weight: bold;
+        line-height: 18px;
+    }
+
+    .right {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.month-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+    padding-left: 15px;
+
+    @media screen and (max-width: 320px) {
+        margin-bottom: 0;
+        padding-left: 5px;
+    }
+
+    .month-name {
+        line-height: 18px;
+        margin-bottom: 14px;
+
+        @media screen and (max-width: 320px) {
+            font-size: 6px;
+            margin-bottom: 0;
+        }
+    }
+
+    .month-indicator {
+        border-radius: 4px;
+        height: 8px;
+        width: 92px;
+
+        @media screen and (max-width: 320px) {
+            height: 8px;
+            width: 31px;
+        }
+    }
+    
+    div.success {
+        @extend .month-indicator;
+        background: #276EC3;
+    }
+    
+    div.fail {
+        @extend .month-indicator;
+        background: #C1272D;
+    }
+}

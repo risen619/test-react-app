@@ -1,0 +1,57 @@
+.left {
+    align-items: center;
+    display: flex;
+    padding-right: 16px;
+    width: 50%;
+
+    & > span {
+        line-height: 18px;
+
+        &.success {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        width: 60%;
+
+        & > span {
+            line-height: 14px;
+        }
+    }
+}
+
+.right {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    
+    @media screen and (max-width: 320px) {
+        flex-wrap: wrap;
+        width: 40%;
+    }
+
+    & > div.filename {
+        margin-bottom: 6px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        & > span {
+            color: #276EC3;
+            text-decoration: underline;
+        }
+    }
+}
+
+.icon {
+    height: 13.75px;
+    width: 15px;
+
+    @media screen and (max-width: 320px) {
+        height: 9px;
+        width: 10px;
+    }
+}
